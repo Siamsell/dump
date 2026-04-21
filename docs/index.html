@@ -256,7 +256,19 @@
       transition: background .2s, border-color .2s, color .2s;
     }
     .reviews-nav-btn:hover { background: var(--green); border-color: var(--green); color: #fff; }
+/* Single combined before/after image */
+.ba-single-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
 
+.ba-single-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
     /* ── FAQ ── */
     #faq { background: var(--faq-bg); }
     .faq-container { max-width: 760px; margin: 50px auto 0; }
@@ -739,7 +751,7 @@
     <h2 class="section-title">OUR JUNK REMOVAL<br>SERVICES</h2>
   </div>
 
-  <!-- ─── HOME PICKUPS ─── -->
+    <!-- ─── HOME PICKUPS ─── -->
   <div class="pickup-block" id="block-home">
     <div class="pickup-title-row" onclick="toggleBlock('block-home')">
       <h2>HOME PICKUPS</h2>
@@ -748,17 +760,10 @@
     <div class="pickup-block-body">
       <p class="pickup-sub">From single-item pickups to full garage cleanouts — we handle it all with care and efficiency.</p>
 
-      <!-- BEFORE / AFTER -->
+      <!-- BEFORE / AFTER - Single combined image -->
       <div class="ba-wrap">
-        <div class="ba-images">
-          <div class="ba-side">
-            <img src="images/bsns.jpg" alt="Before" onerror="this.src='https://placehold.co/400x300/f0ede8/999?text=BEFORE'" />
-            <span class="ba-label">BEFORE</span>
-          </div>
-          <div class="ba-side">
-            <img src="images/beforaftrh.jpg" alt="After" onerror="this.src='https://placehold.co/400x300/d4edda/2d6a2d?text=AFTER'" />
-            <span class="ba-label">AFTER</span>
-          </div>
+        <div class="ba-single-image">
+          <img src="images/beforaftrh.jpg" alt="Before and After" onerror="this.src='https://placehold.co/800x400/f0ede8/2d6a2d?text=BEFORE+%7C+AFTER'" />
         </div>
         <div class="ba-contact-bar">
           <a href="tel:6602014433">
@@ -810,17 +815,10 @@
     <div class="pickup-block-body">
       <p class="pickup-sub">Commercial junk removal — minimal disruption, maximum results.</p>
 
-      <!-- BEFORE / AFTER -->
+      <!-- BEFORE / AFTER - Single combined image -->
       <div class="ba-wrap">
-        <div class="ba-images">
-          <div class="ba-side">
-            <img src="images/bsns.jpg" alt="Before" onerror="this.src='https://placehold.co/400x300/f0ede8/999?text=BEFORE'" />
-            <span class="ba-label">BEFORE</span>
-          </div>
-          <div class="ba-side">
-            <img src="images/after-biz.jpg" alt="After" onerror="this.src='https://placehold.co/400x300/d4edda/2d6a2d?text=AFTER'" />
-            <span class="ba-label">AFTER</span>
-          </div>
+        <div class="ba-single-image">
+          <img src="images/bsns.jpg" alt="Before and After" onerror="this.src='https://placehold.co/800x400/f0ede8/2d6a2d?text=BEFORE+%7C+AFTER'" />
         </div>
         <div class="ba-contact-bar">
           <a href="tel:6602014433">
@@ -854,6 +852,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ══════════════════════════════════════════
      SIMPLE PRICING — centré avec DETAILS btn
@@ -947,7 +946,7 @@
 <div class="cta-band">
   <h2>READY TO RECLAIM YOUR<br>SPACE?</h2>
   <p>Get a free, no-obligation quote in minutes. Same-day service available.</p>
-  <a href="#quote" class="btn-cta">GET MY FREE QUOTE →</a>
+ 
 </div>
 
 <!-- ══════════════════════════════════════════
@@ -994,7 +993,7 @@
         <li><a href="mailto:info@dumpitaway.com"><svg style="display:inline;vertical-align:middle;margin-right:6px" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@dumpitaway.com</a></li>
         <li><a href="#"><svg style="display:inline;vertical-align:middle;margin-right:6px" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>California, USA</a></li>
         <li><a href="#">Hours: Mon–Sun 7am–8pm</a></li>
-        <li><a href="#quote">Get a Free Quote</a></li>
+      
       </ul>
     </div>
   </div>
